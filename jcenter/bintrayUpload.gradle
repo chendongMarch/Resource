@@ -3,43 +3,45 @@ apply plugin: 'com.github.dcendents.android-maven'
 
 group = yourGroup
 version = yourVersion
-project.archivesBaseName = yourArtifactId
 
+
+//初始化maven库
 install {
     repositories.mavenInstaller {
-        pom.project {
-            name yourProName
-            description yourProDesc
-            url yourSiteUrl
-            inceptionYear '2017'
+        // This generates POM.xml with proper parameters一
+        pom {
+            project {
+                packaging 'aar'
 
-            packaging 'aar'
-            groupId yourGroup
-            artifactId yourArtifactId
-            version yourVersion
-
-            licenses {
-                license {
-                    name 'The Apache Software License, Version 2.0'
-                    url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-                    distribution 'repo'
-                }
-            }
-            scm {
-                connection yourGitUrl
+                // Add your description here
+                name yourProName
+                description yourProDesc
                 url yourSiteUrl
-            }
-            developers {
-                developer {
-                    id yourId
-                    name yourName
-                    email yourEmail
+
+                // Set your license
+                licenses {
+                    license {
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        id yourId
+                        name yourName
+                        email yourEmail
+                    }
+                }
+                scm {
+                    connection yourGitUrl
+                    developerConnection yourGitUrl
+                    url yourSiteUrl
+
                 }
             }
         }
     }
 }
-
 
 // This generates sources.jar
 task sourcesJar(type: Jar) {
@@ -113,9 +115,6 @@ bintray {
 
     configurations = ['archives']
 
-    dryRun = false
-    publish = true
-
     pkg {
         repo = 'maven'
         name = yourProName
@@ -123,16 +122,17 @@ bintray {
         vcsUrl = yourGitUrl
         websiteUrl = yourSiteUrl
         issueTrackerUrl = YourIssueTrackerUrl
-        publicDownloadNumbers = true
-        version {
-            name = yourVersion
-            desc = yourProDesc
-            vcsTag = yourVersion
+        // publicDownloadNumbers = true
+        publish = true
+        // version {
+        //    name = yourVersion
+        //    desc = yourProDesc
+        //    vcsTag = yourVersion
 
-            gpg {
-                sign = true
-            }
-        }
+        //    gpg {
+        //        sign = true
+        //    }
+        //}
     }
 }
 
@@ -157,6 +157,48 @@ bintray {
 //        defaults {
 //            //这里的名字和前面bintray.configurations的值一致即可，会将其包含的输出上传到jfrog上去
 //            publishConfigs('archives')
+//        }
+//    }
+//}
+
+
+
+
+
+
+//project.archivesBaseName = yourArtifactId
+//
+//install {
+//    repositories.mavenInstaller {
+//        pom.project {
+//            name yourProName
+//            description yourProDesc
+//            url yourSiteUrl
+//            // inceptionYear '2017'
+//
+//            packaging 'aar'
+//            groupId yourGroup
+//            artifactId yourArtifactId
+//            version yourVersion
+//
+//            licenses {
+//                license {
+//                    name 'The Apache Software License, Version 2.0'
+//                    url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+//                    // distribution 'repo'
+//                }
+//            }
+//            scm {
+//                connection yourGitUrl
+//                url yourSiteUrl
+//            }
+//            developers {
+//                developer {
+//                    id yourId
+//                    name yourName
+//                    email yourEmail
+//                }
+//            }
 //        }
 //    }
 //}
