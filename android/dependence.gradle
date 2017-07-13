@@ -18,10 +18,7 @@ ext {
             butterknife             : 'com.jakewharton:butterknife:7.0.1',
             butterknife840          : 'com.jakewharton:butterknife:8.4.0',
             butterknife840_processor: 'com.jakewharton:butterknife-compiler:8.4.0',
-            //recycler view适配
-            quickRv                 : 'com.march.quickrvlibs:quickrvlibs:2.1.4',
-            //网络请求
-            okhttp_utils            : 'com.zhy:okhttputils:2.2.1',
+             
             //数据库
             greendao                : 'org.greenrobot:greendao:2.2.0',
             //流式标签
@@ -34,9 +31,13 @@ ext {
             slidingSelect           : 'com.march.slidingselect:slidingselect:0.0.1',
             //blot task
             blot                    : 'com.parse.bolts:bolts-tasks:1.4.0',
-            // ok http utils
-            okhttputils             : 'com.zhy:okhttputils:2.6.2',
-            lib_adapter             : "com.march.lib-adapter:lib-adapter:1.0.3-beta4",
-            lib_dev                 : "com.march.lib-dev:lib-dev:0.0.2"
+         
+
+            rxjava2                 : 'io.reactivex.rxjava2:rxjava:2.1.0',
+            rxandroid               : 'io.reactivex.rxjava2:rxandroid:2.0.1',
+            lightAdapter            : "com.github.chendongMarch:lightadapter:0.0.1-beta5",
+
+            //时间总线
+            eventbus                : 'org.greenrobot:eventbus:3.0.0'
     ]
 }
