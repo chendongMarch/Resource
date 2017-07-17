@@ -38,6 +38,7 @@ ext {
             lightAdapter            : "com.github.chendongMarch:lightadapter:0.0.1-beta5",
 
             //时间总线
-            eventbus                : 'org.greenrobot:eventbus:3.0.0'
+            eventbus                : 'org.greenrobot:eventbus:3.0.0',
+            devKit                  : 'com.github.chendongMarch:devKit:0.0.4-beta1'
     ]
 }
