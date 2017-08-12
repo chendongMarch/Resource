@@ -30,7 +30,7 @@ ext {
             //滑动选中
             slidingSelect           : 'com.march.slidingselect:slidingselect:0.0.1',
             //blot task
-            blot                    : 'com.parse.bolts:bolts-tasks:1.4.0',
+            bolts                    : 'com.parse.bolts:bolts-tasks:1.4.0',
          
 
             rxjava2                 : 'io.reactivex.rxjava2:rxjava:2.1.0',
