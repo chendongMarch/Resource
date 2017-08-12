@@ -29,7 +29,8 @@ ext {
             disklrucache            : 'com.jakewharton:disklrucache:2.0.1',
             //滑动选中
             slidingSelect           : 'com.march.slidingselect:slidingselect:0.0.1',
-            //blot task
+            // blot task
+            // bolts                    : 'com.parse.bolts:bolts-tasks:1.4.0',
             bolts                    : 'com.parse.bolts:bolts-tasks:1.4.0',
          
 
