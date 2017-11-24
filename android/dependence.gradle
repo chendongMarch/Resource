@@ -1,3 +1,10 @@
+//
+// 依赖版本管理
+//
+// How to Use ?
+// compile rootProject.ext.google.design
+// compile rootProject.ext.libs.design
+//
 ext {
     // 官方支持库的版本
     support_version = '25.3.0'
