@@ -1,30 +1,29 @@
 //
-// 依赖版本管理，减少版本冲突，容易管理。
+// 依赖版本管理
 //
 // How to Use ?
-// compile rootProject.ext.support.design
+// compile rootProject.ext.google.design
 // compile rootProject.ext.libs.design
-// compile rootProject.ext.business.xg_push_base
 
 
 ext {
     // 官方支持库的版本
-    support_version = '26.1.0'
+    support_version = '25.3.0'
     dbflow_version = "4.0.0-beta2"
     fresco_version = '1.3.0'
 
-
     // 官方支持库
-    support = [
-
+    google = [
             /*************************************** SDK *************************************/
             // Google support
             design                  : "com.android.support:design:${support_version}",
             appcompat_v7            : "com.android.support:appcompat-v7:$support_version",
             recyclerView_v7         : "com.android.support:recyclerview-v7:${support_version}",
             cardView_v7             : "com.android.support:cardview-v7:${support_version}",
+    ]
 
-
+    // 三方库
+    libs = [
             /*************************************** 数据库 ***************************************/
             // green dao
             greendao                : 'org.greenrobot:greendao:2.2.0',
@@ -95,6 +94,6 @@ ext {
             // RecyclerView Adapter
             lightAdapter            : "com.github.chendongMarch:lightadapter:0.0.1-beta4",
             // 滑动选中
-            slidingSelect           : 'com.march.slidingselect:slidingselect:0.0.1'
+            slidingSelect           : 'com.march.slidingselect:slidingselect:0.0.1',
     ]
 }
