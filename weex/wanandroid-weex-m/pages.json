@@ -1,0 +1,14 @@
+[
+	{
+		"_comment": "首页",
+		"pageName": "home-index-weex",
+		"remoteJs": "",
+		"localJs": "",
+		"assetsJs": "",
+		"appVersion": "appVersion",
+		"jsVersion":"jsVersion",
+		"jsMd5":"jsMd5",
+		"webUrl":"webUrl"
+	}
+
+]
