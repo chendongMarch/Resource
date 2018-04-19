@@ -2,13 +2,46 @@
 	{
 		"_comment": "首页",
 		"pageName": "home-index-weex",
-		"remoteJs": "",
-		"localJs": "",
-		"assetsJs": "",
-		"appVersion": "appVersion",
-		"jsVersion":"jsVersion",
-		"jsMd5":"jsMd5",
-		"webUrl":"webUrl"
+		"remoteJs": "https://raw.githubusercontent.com/chendongMarch/Resource/a11ab30ec71593697f56aa061f53bd981577bb80/weex/wanandroid-weex-m/js/home-index-weex.js",
+		"appVersion": "1.0.0",
+		"jsVersion":"1.0.0",
+		"jsMd5":"818c5fb69a573d6d567fa2f7aa3d29f2",
+		"webUrl":"/home/home-index-weex"
+	},
+	{
+		"_comment": "推荐",
+		"pageName": "home-recommend-weex",
+		"remoteJs": "https://raw.githubusercontent.com/chendongMarch/Resource/a11ab30ec71593697f56aa061f53bd981577bb80/weex/wanandroid-weex-m/js/home-recommend-weex.js",
+		"appVersion": "1.0.0",
+		"jsVersion":"1.0.0",
+		"jsMd5":"05303fc74c798983ae09a4de77dcb5b1",
+		"webUrl":"/home/home-recommend-weex"
+	},
+	{
+		"_comment": "体系",
+		"pageName": "home-tree-weex",
+		"remoteJs": "https://raw.githubusercontent.com/chendongMarch/Resource/a11ab30ec71593697f56aa061f53bd981577bb80/weex/wanandroid-weex-m/js/home-tree-weex.js",
+		"appVersion": "1.0.0",
+		"jsVersion":"1.0.0",
+		"jsMd5":"83a57b8f7d3b74d25bc9276a9e6ba1c5",
+		"webUrl":"/home/home-tree-weex"
+	},
+	{
+		"_comment": "关于",
+		"pageName": "home-about-weex",
+		"remoteJs": "https://raw.githubusercontent.com/chendongMarch/Resource/a11ab30ec71593697f56aa061f53bd981577bb80/weex/wanandroid-weex-m/js/home-about-weex.js",
+		"appVersion": "1.0.0",
+		"jsVersion":"1.0.0",
+		"jsMd5":"aad021f2690548e3838a9c7c167c4642",
+		"webUrl":"/home/home-about-weex"
+	},
+	{
+		"_comment": "分类选择",
+		"pageName": "tree-category-weex",
+		"remoteJs": "https://raw.githubusercontent.com/chendongMarch/Resource/a11ab30ec71593697f56aa061f53bd981577bb80/weex/wanandroid-weex-m/js/tree-category-weex.js",
+		"appVersion": "1.0.0",
+		"jsVersion":"1.0.0",
+		"jsMd5":"31bc668ac6e9fdad72bfda25fd4a26b9",
+		"webUrl":"/tree/tree-category-weex"
 	}
-
 ]
