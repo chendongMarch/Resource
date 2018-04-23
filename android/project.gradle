@@ -1,31 +1,50 @@
+// def version = rootProject.ext.version
+// def libs = rootProject.ext.libs
 //
-// 依赖版本管理
+// android {
+//     compileSdkVersion version.compileSdkVersion
+//     defaultConfig {
+//         minSdkVersion version.minSdkVersion
+//         targetSdkVersion version.targetSdkVersion
+//     }
+// }
 //
-// How to Use ?
-// compile rootProject.ext.google.design
-// compile rootProject.ext.libs.design
-//
+// dependencies {
+//     implementation libs.appcompat_v7
+//     implementation libs.okhttp3
+//     implementation libs.glide
+// }
 ext {
-
-
 
     // 官方支持库的版本
     support_version = '26.1.0'
     dbflow_version = "4.0.0-beta2"
     fresco_version = '1.3.0'
 
+    version = [
+            compileSdkVersion: 26,
+            minSdkVersion    : 15,
+            targetSdkVersion : 27,
+    ]
+
     // 官方支持库
     google = [
             /*************************************** SDK *************************************/
             // Google support
-            design                  : "com.android.support:design:${support_version}",
-            appcompat_v7            : "com.android.support:appcompat-v7:$support_version",
-            recyclerView_v7         : "com.android.support:recyclerview-v7:${support_version}",
-            cardView_v7             : "com.android.support:cardview-v7:${support_version}",
+            design         : "com.android.support:design:${support_version}",
+            appcompat_v7   : "com.android.support:appcompat-v7:$support_version",
+            recyclerView_v7: "com.android.support:recyclerview-v7:${support_version}",
+            cardView_v7    : "com.android.support:cardview-v7:${support_version}",
     ]
 
-    // 三方库
     libs = [
+            /*************************************** SDK *************************************/
+            // Google support
+            design         : "com.android.support:design:${support_version}",
+            appcompat_v7   : "com.android.support:appcompat-v7:$support_version",
+            recyclerView_v7: "com.android.support:recyclerview-v7:${support_version}",
+            cardView_v7    : "com.android.support:cardview-v7:${support_version}",
+
             /*************************************** 数据库 ***************************************/
             // green dao
             greendao                : 'org.greenrobot:greendao:2.2.0',
