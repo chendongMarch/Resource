@@ -1,3 +1,4 @@
+// apply from: 'https://coding.net/u/devlab/p/Resource/git/blob/master/android/project.gradle?public=true'
 // def version = rootProject.ext.version
 // def libs = rootProject.ext.libs
 //
@@ -56,6 +57,8 @@ ext {
             /*********************************** 图像 *************************************/
             // 图片加载
             glide                   : 'com.github.bumptech.glide:glide:3.7.0',
+            glide4                  : 'com.github.bumptech.glide:glide:4.7.1',
+            glide4Compiler          : 'com.github.bumptech.glide:compiler:4.7.1',
             // fresco
             fresco                  : "com.facebook.fresco:fresco:${fresco_version}",
             animated_gif            : "com.facebook.fresco:animated-gif:${fresco_version}",
