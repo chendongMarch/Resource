@@ -1,0 +1,34 @@
+
+def gitVersionCode() {
+    def cmd = 'git rev-list HEAD --count'
+    if (cmd.execute().text.trim() == "") {
+        return 38
+    }
+    return cmd.execute().text.trim().toInteger()
+}
+
+def gitVersionTag() {
+    def cmd = 'git describe --tags'
+    def version = cmd.execute().text.trim()
+
+    def pattern = "-(\\d+)-g"
+    def matcher = version =~ pattern
+
+    if (matcher) {
+        version = version.substring(0, matcher.start())
+    }
+
+    return version
+}
+
+android {
+    applicationVariants.all { variant ->
+        if (variant.buildType.name == 'debug' ){
+            variant.mergedFlavor.versionName = noReleaseV
+            variant.mergedFlavor.versionCode = 100
+        } else {
+            variant.mergedFlavor.versionName = gitVersionTag()
+        }
+        variant.mergedFlavor.versionCode = gitVersionCode()
+    }
+}
