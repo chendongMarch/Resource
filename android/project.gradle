@@ -1,7 +1,13 @@
+// 从远程依赖
 // apply from: 'https://coding.net/u/devlab/p/Resource/git/blob/master/android/project.gradle?public=true'
+// 从本地依赖
+// apply from: '/Users/march/Documents/Resource/android/project.gradle'
+// 
+// 包含的内容：
 // def version = rootProject.ext.version
 // def libs = rootProject.ext.libs
-//
+// 
+// 声明 android 版本
 // android {
 //     compileSdkVersion version.compileSdkVersion
 //     defaultConfig {
@@ -9,13 +15,16 @@
 //         targetSdkVersion version.targetSdkVersion
 //     }
 // }
-//
+// 添加依赖
 // dependencies {
 //     implementation libs.appcompat_v7
 //     implementation libs.okhttp3
 //     implementation libs.glide
 // }
+// 发布一个类库
 // ../gradlew clean build bintrayUpload -PbintrayUser=zfy -PbintrayKey=950d100c85c27c8f1690e9bf4d39a3824cc4fc2b -PdryRun=false
+//
+
 ext {
 
     // 官方支持库的版本
@@ -46,7 +55,7 @@ ext {
             appcompat_v7            : "com.android.support:appcompat-v7:$support_version",
             recyclerView_v7         : "com.android.support:recyclerview-v7:${support_version}",
             cardView_v7             : "com.android.support:cardview-v7:${support_version}",
-            multidex                : 'com.android.support:multidex:1.0.1',
+            multidex                : 'com.android.support:multidex:1.0.2',
             /*************************************** 数据库 ***************************************/
             // green dao
             greendao                : 'org.greenrobot:greendao:2.2.0',
@@ -116,7 +125,8 @@ ext {
             zxing                   : "com.google.zxing:core:3.3.0",
 
             /************************************** 自定义 ***********************************/
-            common                  : 'com.zfy:common:0.0.2',
+            common                  : 'com.zfy:common:0.0.4',
+            assistant                  : 'com.zfy:assistant:0.0.1',
             lightadapter            : 'com.zfy:lightadapter:0.0.1',
             // 滑动选中
             slidingSelect           : 'com.march.slidingselect:slidingselect:0.0.1',
